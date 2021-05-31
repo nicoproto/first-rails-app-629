@@ -1,3 +1,13 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  # get '/', to: 'pages#home'
+  root to: 'pages#home'
+
+  # Generic syntax:
+  # verb 'path', to: 'controller_name#action_name'
+  get '/about', to: 'pages#about'
+
+  get '/contact', to: 'pages#contact'
+
+  # On Food delivery 👇🏻
+  # when '2' do "meals_controller.list"
 end

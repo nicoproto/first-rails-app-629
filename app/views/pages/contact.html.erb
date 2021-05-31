@@ -1,1 +1,12 @@
 <h1>I'm a contact page 🐙</h1>
+
+<form action="/contact" method="get">
+  <input type="text" name="member" placeholder="Search for 🐢🥷" value="<%= params[:member] %>">
+  <input type="submit">
+</form>
+
+<ul>
+  <% @members.each do |member| %>
+    <li><%= member.upcase %></li>
+  <% end %>
+</ul>

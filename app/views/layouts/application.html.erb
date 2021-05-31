@@ -12,6 +12,10 @@
   <body>
     <div style="background-color: goldenrod; padding: 16px;">
       Navbar 🛸
+      <% # link_to "Link Text", path %>
+      <%= link_to "Contact", contact_us_path %>
+      <%= link_to "About", about_path %>
+      <%= link_to "Home", root_path %>
     </div>
 
     <%= yield %>

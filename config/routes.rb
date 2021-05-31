@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   # verb 'path', to: 'controller_name#action_name'
   get '/about', to: 'pages#about'
 
-  get '/contact', to: 'pages#contact'
+  get '/contact', to: 'pages#contact', as: :contact_us
 
   # On Food delivery 👇🏻
   # when '2' do "meals_controller.list"
